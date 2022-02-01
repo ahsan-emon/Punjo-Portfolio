@@ -2,6 +2,37 @@
   .dropdown-menu[data-bs-popper] {
     left: 71%;
   }
+  .about-me h1 {
+    font-size: 25px;
+  }
+  .about img {
+    height: 100%;
+  }
+  .about-me {
+    padding-bottom: 40px;
+  }
+  .about-me p {
+    margin-top: 40px;
+    font-size: 14px;
+  }
+  .progress-area {
+    margin-bottom: 10px;
+  }
+  .progress {
+    height: 0.75rem;
+    width: 83%;
+  }
+  .progress-area h4 {
+    font-size: 16px;
+  }
+  .progress-bar-area h3 {
+    font-size: 17px;
+    width: 48px;
+    height: 28px;
+  }
+  .about-right-col {
+    width: 95%;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 1440px) {
   .height h2 {
@@ -16,6 +47,9 @@
   header .owl-nav .owl-next i {
     right: -3%;
   }
+  .about img {
+    height: 100%;
+  }
 }
 @media screen and (min-width: 426px) and (max-width: 768px) {
   .height h2 {
@@ -29,6 +63,9 @@
   }
   header .owl-nav .owl-next i {
     right: -3%;
+  }
+  .about img {
+    height: 100%;
   }
 }
 @media screen and (min-width: 376px) and (max-width: 425px) {
@@ -52,6 +89,9 @@
   .portfolio {
     padding: 10px 12px;
     font-size: 15px;
+  }
+  .about img {
+    height: 100%;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 375px) {
@@ -81,5 +121,8 @@
   .portfolio {
     padding: 8px 10px;
     font-size: 10px;
+  }
+  .about img {
+    height: 100%;
   }
 }

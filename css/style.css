@@ -150,3 +150,96 @@ header .owl-nav .owl-next i {
   right: -10%;
   transform: translateY(-50%);
 }
+/* about start  */
+.about {
+  padding: 70px 0;
+}
+.about .container-fluid {
+  padding-left: 0;
+}
+.about img {
+  height: 90%;
+}
+.about-right-col {
+  width: 90%;
+}
+.about-me {
+  padding-bottom: 100px;
+}
+.about-me h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.about-me span {
+  display: block;
+  width: 80%;
+  height: 1px;
+  background-color: #f39c12;
+  position: relative;
+  margin: auto;
+}
+.about-me span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 5px;
+  background-color: #f39c12;
+}
+.about-me p {
+  margin-top: 50px;
+  font-size: 16px;
+}
+.progress-area {
+  margin-bottom: 20px;
+}
+.progress-bar-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.progress-area:last-child {
+  margin-bottom: 0px;
+}
+.progress-area h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.progress {
+  height: 0.85rem;
+  border-radius: 0;
+  width: 88%;
+}
+.progress-bar-area .progress-bar {
+  background-color: #f39c12;
+}
+.progress-bar-area h3 {
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 65px;
+  height: 38px;
+  background-color: #f39c12;
+  margin: 0;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.progress-bar-area h3::after {
+  content: "";
+  position: absolute;
+  top: 27%;
+  left: -5px;
+  transform: rotate(45deg);
+  width: 14px;
+  height: 14px;
+  background-color: #f39c12;
+}
