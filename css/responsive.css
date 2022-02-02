@@ -50,6 +50,12 @@
   .about img {
     height: 100%;
   }
+  .about-right-col {
+    width: 95%;
+  }
+  .progress {
+    width: 83%;
+  }
 }
 @media screen and (min-width: 426px) and (max-width: 768px) {
   .height h2 {
@@ -66,6 +72,12 @@
   }
   .about img {
     height: 100%;
+  }
+  .about-right-col {
+    width: 100%;
+  }
+  .progress {
+    width: 83%;
   }
 }
 @media screen and (min-width: 376px) and (max-width: 425px) {
@@ -92,6 +104,12 @@
   }
   .about img {
     height: 100%;
+  }
+  .about-right-col {
+    width: 100%;
+  }
+  .progress {
+    width: 78%;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 375px) {
@@ -124,5 +142,11 @@
   }
   .about img {
     height: 100%;
+  }
+  .about-right-col {
+    width: 100%;
+  }
+  .progress {
+    width: 70%;
   }
 }
