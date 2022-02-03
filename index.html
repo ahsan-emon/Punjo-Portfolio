@@ -74,7 +74,7 @@
             </div>
         </div>
         <div class="container">
-          <div class="row height align-items-center owl-carousel">
+          <div class="row height align-items-center owl-carousel owl-carousel-header">
             <div class="col-10 col-md-11 p-4 m-auto text-end">
               <h2>Awesome</h2>
               <h1>personal template FOREVER</h1>
@@ -389,6 +389,80 @@
         </div>
       </section>
       <!-- work section end  -->
+      <!-- recent story start  -->
+      <section class="recent-story">
+        <div class="container">
+          <div class="row pb-5 text-center">
+            <div class="col firstSpan">
+              <h1>Recent Story</h1>
+              <span></span>
+            </div>
+          </div>
+          <div class="row owl-carousel owl-carousel-story">
+            <div class="col-12 col-md-11 col-lg-9 m-auto">
+              <div class="row gx-0">
+                <div class="col-md-4">
+                  <div class="recent-story-text">
+                    <p>06 July 2015</p>
+                    <h6>Making the first post</h6>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum est laudantium consectetur.</p>
+                    <a class="btn" href="">Learn More</a>
+                  </div>
+                </div>
+                <div class="col-md-2 pe-2">
+                  <div class="recent-story-img h-100">
+                    <img class="img-fluid h-100" src="images/story-img-1.png" alt="">
+                  </div>
+                </div>
+                <div class="col-md-2 ps-2">
+                  <div class="recent-story-img h-100">
+                    <img class="img-fluid h-100" src="images/story-img-2.png" alt="">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="recent-story-text">
+                    <p>08 May 2015</p>
+                    <h6>Making the first post</h6>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum est laudantium consectetur.</p>
+                    <a class="btn" href="">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-11 col-lg-9 m-auto">
+              <div class="row gx-0">
+                <div class="col-md-4">
+                  <div class="recent-story-text">
+                    <p>06 July 2015</p>
+                    <h6>Making the first post</h6>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum est laudantium consectetur.</p>
+                    <a class="btn" href="">Learn More</a>
+                  </div>
+                </div>
+                <div class="col-md-2 pe-2">
+                  <div class="recent-story-img h-100">
+                    <img class="img-fluid h-100" src="images/story-img-1.png" alt="">
+                  </div>
+                </div>
+                <div class="col-md-2 ps-2">
+                  <div class="recent-story-img h-100">
+                    <img class="img-fluid h-100" src="images/story-img-2.png" alt="">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="recent-story-text">
+                    <p>08 May 2015</p>
+                    <h6>Making the first post</h6>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum est laudantium consectetur.</p>
+                    <a class="btn" href="">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- recent story end  -->
     </main>
     <!-- main end  -->
     <!-- footer start  -->
@@ -404,14 +478,28 @@
     <!-- owl carousel  -->
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <!-- for header carousel  -->
     <script>
       $(document).ready(function(){
-        $(".owl-carousel").owlCarousel({
+        $(".owl-carousel-header").owlCarousel({
           nav:true,
           items:1,
+          dots: false,
           loop:true,
           autoplay:true,
           navText: ["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"]
+        });
+      });
+    </script>
+    <!-- for story carousel  -->
+    <script>
+      $(document).ready(function(){
+        $(".owl-carousel-story").owlCarousel({
+          nav:false,
+          items:1,
+          dots: true,
+          loop:false,
+          autoplay:true,
         });
       });
     </script>

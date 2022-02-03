@@ -169,7 +169,8 @@ header .owl-nav .owl-next i {
 .about-me h1,
 .services h1,
 .statistic h1,
-.work h1 {
+.work h1,
+.recent-story .firstSpan h1 {
   font-size: 30px;
   text-transform: uppercase;
   font-weight: 700;
@@ -178,7 +179,8 @@ header .owl-nav .owl-next i {
 .about-me span,
 .services span,
 .statistic span,
-.work span {
+.work span,
+.recent-story .firstSpan span {
   display: block;
   width: 70%;
   height: 1px;
@@ -189,7 +191,8 @@ header .owl-nav .owl-next i {
 .about-me span::after,
 .services span::after,
 .statistic span::after,
-.work span::after {
+.work span::after,
+.recent-story .firstSpan span::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -202,7 +205,8 @@ header .owl-nav .owl-next i {
 .about:hover .about-me span::after,
 .services:hover span::after,
 .statistic:hover span::after,
-.work:hover span::after {
+.work:hover span::after,
+.recent-story:hover .firstSpan span::after {
   animation: slide-arrow 2s linear infinite alternate;
 }
 @keyframes slide-arrow {
@@ -277,7 +281,8 @@ header .owl-nav .owl-next i {
 }
 .services span,
 .statistic span,
-.work span {
+.work span,
+.recent-story .firstSpan span {
   width: 50%;
 }
 .service {
@@ -542,3 +547,62 @@ header .owl-nav .owl-next i {
   right: 10px;
   opacity: 1;
 }
+/* recent stroy start  */
+.recent-story {
+  padding: 70px 0;
+}
+
+.recent-story-text {
+  border: 1px solid #ebebeb;
+  padding: 20px;
+  height: 100%;
+}
+.recent-story-text p {
+  color: #858282;
+  font-size: 14px;
+}
+.recent-story-text h6 {
+  color: #f39c12;
+  font-size: 18px;
+  font-weight: 600;
+}
+.recent-story-text a {
+  background-color: #aaaaaa;
+  color: #fff;
+  border-radius: 0;
+  font-weight: 500;
+  font-size: 16px;
+  transition: 0.4s all ease-in-out;
+}
+.recent-story-text a:hover {
+  background-color: #282828;
+  color: #fff;
+}
+.recent-story-img {
+  border: 1px solid #ebebeb;
+}
+.recent-story .owl-dots {
+  position: relative;
+}
+.recent-story .owl-dots button span {
+  background-color: #b7b7b7;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  /* position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); */
+  margin-right: 5px;
+  transition: 0.4s all ease-in-out;
+}
+.recent-story .owl-dots button span:hover {
+  background-color: #414141;
+}
+.recent-story .owl-dots button span:active {
+  background-color: #414141;
+}
+/* .recent-story .owl-dots .owl-dot.active button span:focus {
+  background-color: #414141;
+} */
