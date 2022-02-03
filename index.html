@@ -261,7 +261,7 @@
               <span></span>
             </div>
           </div>
-          <div class="row text-center line pt-5 pb-4">
+          <div class="row text-center line p-5">
             <div class="col">
               <h2>4609</h2>
               <i class="fas fa-laptop"></i>
@@ -269,18 +269,126 @@
             </div>
             <div class="col">
               <h2>3470</h2>
-              <i class="fas fa-laptop"></i>
+              <i class="far fa-smile"></i>
               <h5>Happy client</h5>
             </div>
             <div class="col">
               <h2>2908</h2>
-              <i class="fas fa-laptop"></i>
+              <i class="fas fa-award"></i>
               <h5>Awards</h5>
             </div>
           </div>
         </div>
       </section>
       <!-- statistic section end  -->
+      <!-- work section start  -->
+      <section class="work">
+        <div class="container">
+          <div class="row pb-5 text-center">
+            <div class="col">
+              <h1>My Work</h1>
+              <span></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <ul>
+                <li><button class="btn" type="button" data-filter=".select-gal">Full Gallery</button></li>
+                <li><button class="btn" type="button" data-filter=".select-des">Web Desing</button></li>
+                <li><button class="btn" type="button" data-filter=".select-page">Landing Pages</button></li>
+                <li><button class="btn" type="button" data-filter=".select-blog">Personal Blog</button></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row gy-4 mixCont">
+            <div class="col-md-4 mix select-gal">
+              <div class="mix-cont-box">
+                <img class="img-fluid" src="images/items-1.png" alt="">
+                <div class="img-text">
+                  <h6>work photo</h6>
+                  <p>Landing page photo</p>
+                </div>
+                <div class="icon">
+                <i class="fas fa-search"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mix select-gal select-des">
+              <div class="mix-cont-box">
+                <img class="img-fluid" src="images/items-2.png" alt="">
+                <div class="img-text">
+                  <h6>work photo</h6>
+                  <p>Landing page photo</p>
+                </div>
+                <div class="icon">
+                <i class="fas fa-search"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mix select-gal select-blog">
+              <div class="mix-cont-box">
+                <img class="img-fluid" src="images/items-3.png" alt="">
+                <div class="img-text">
+                  <h6>work photo</h6>
+                  <p>Landing page photo</p>
+                </div>
+                <div class="icon">
+                <i class="fas fa-search"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mix select-gal select-des select-blog">
+              <div class="mix-cont-box">
+                <img class="img-fluid" src="images/items-4.png" alt="">
+                <div class="img-text">
+                  <h6>work photo</h6>
+                  <p>Landing page photo</p>
+                </div>
+                <div class="icon">
+                <i class="fas fa-search"></i>
+                </div>
+              </div>  
+            </div>
+            <div class="col-md-3 mix select-gal select-blog select-page select-des">
+              <div class="mix-cont-box">
+                <img class="img-fluid" src="images/items-5.png" alt="">
+                <div class="img-text">
+                  <h6>work photo</h6>
+                  <p>Landing page photo</p>
+                </div>
+                <div class="icon">
+                <i class="fas fa-search"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mix select-gal select-des select-page">
+              <div class="mix-cont-box">
+                <img class="img-fluid" src="images/items-6.png" alt="">
+                <div class="img-text">
+                  <h6>work photo</h6>
+                  <p>Landing page photo</p>
+                </div>
+                <div class="icon">
+                <i class="fas fa-search"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mix select-gal select-blog select-page">
+              <div class="mix-cont-box">
+                <img class="img-fluid" src="images/items-7.png" alt="">
+                <div class="img-text">
+                  <h6>work photo</h6>
+                  <p>Landing page photo</p>
+                </div>
+                <div class="icon">
+                <i class="fas fa-search"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- work section end  -->
     </main>
     <!-- main end  -->
     <!-- footer start  -->
@@ -306,6 +414,13 @@
           navText: ["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"]
         });
       });
+    </script>
+    <script src="js/mixitup.min.js"></script>
+    <script>
+      // var config = document.querySelector('.mixCont');
+      // config mixitup 
+      var mixer = mixitup('.mixCont');
+      // var mixer = mixitup(config);
     </script>
   </body>
 </html>
