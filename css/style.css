@@ -166,21 +166,14 @@ header .owl-nav .owl-next i {
 .about-me {
   padding-bottom: 100px;
 }
-.about-me h1,
-.services h1,
-.statistic h1,
-.work h1,
-.recent-story .firstSpan h1 {
+.title-part h1 {
   font-size: 30px;
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 10px;
+  color: #3b3b3b;
 }
-.about-me span,
-.services span,
-.statistic span,
-.work span,
-.recent-story .firstSpan span {
+.title-part span {
   display: block;
   width: 70%;
   height: 1px;
@@ -188,11 +181,7 @@ header .owl-nav .owl-next i {
   position: relative;
   margin: auto;
 }
-.about-me span::after,
-.services span::after,
-.statistic span::after,
-.work span::after,
-.recent-story .firstSpan span::after {
+.title-part span::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -202,11 +191,15 @@ header .owl-nav .owl-next i {
   height: 5px;
   background-color: #f39c12;
 }
-.about:hover .about-me span::after,
-.services:hover span::after,
-.statistic:hover span::after,
-.work:hover span::after,
-.recent-story:hover .firstSpan span::after {
+.about:hover .title-part span::after,
+.services:hover .title-part span::after,
+.statistic:hover .title-part span::after,
+.work:hover .title-part span::after,
+.recent-story:hover .title-part span::after,
+.life-story:hover .title-part span::after,
+.tweet:hover .title-part span::after,
+.get-in-touch:hover .title-part span::after,
+.follow:hover .title-part span::after {
   animation: slide-arrow 2s linear infinite alternate;
 }
 @keyframes slide-arrow {
@@ -279,10 +272,13 @@ header .owl-nav .owl-next i {
   padding-top: 70px;
   padding-bottom: 50px;
 }
-.services span,
-.statistic span,
-.work span,
-.recent-story .firstSpan span {
+.services .title-part span,
+.statistic .title-part span,
+.work .title-part span,
+.recent-story .title-part span,
+.tweet .title-part span,
+.get-in-touch .title-part span,
+.follow .title-part span {
   width: 50%;
 }
 .service {
@@ -477,9 +473,11 @@ header .owl-nav .owl-next i {
 .mix-cont-box {
   position: relative;
   height: 100%;
+  width: 100%;
 }
 .mix-cont-box img {
   height: 100%;
+  width: 100%;
 }
 .mix-cont-box::after {
   content: "";
@@ -548,10 +546,10 @@ header .owl-nav .owl-next i {
   opacity: 1;
 }
 /* recent stroy start  */
-.recent-story {
+.recent-story,
+.feedback {
   padding: 70px 0;
 }
-
 .recent-story-text {
   border: 1px solid #ebebeb;
   padding: 20px;
@@ -581,28 +579,180 @@ header .owl-nav .owl-next i {
 .recent-story-img {
   border: 1px solid #ebebeb;
 }
-.recent-story .owl-dots {
-  position: relative;
+.recent-story .owl-theme .owl-nav.disabled + .owl-dots,
+.feedback .owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 40px;
 }
-.recent-story .owl-dots button span {
-  background-color: #b7b7b7;
-  display: block;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  /* position: absolute;
+.recent-story .owl-theme .owl-dots .owl-dot span,
+.feedback .owl-theme .owl-dots .owl-dot span {
+  background: #b7b7b7;
+}
+.recent-story .owl-theme .owl-dots .owl-dot.active span,
+.recent-story .owl-theme .owl-dots .owl-dot:hover span,
+.feedback .owl-theme .owl-dots .owl-dot.active span,
+.feedback .owl-theme .owl-dots .owl-dot:hover span {
+  background: #414141;
+}
+/* life story start  */
+.life-story {
+  padding: 30px 0;
+  background-color: #262626;
+}
+.life-story-title p {
+  color: #c7c7c7;
+  margin-top: 40px;
+  font-size: 14px;
+}
+.life-story-title span {
+  width: 45%;
+  margin: 0;
+}
+.feedback .owl-carousel .owl-item img {
+  width: auto;
+  margin-right: 15px;
+}
+.feedback-text {
+  padding: 25px 20px;
+  background-color: #f6f6f6;
+}
+.feedback-text h6 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #696868;
+  margin-bottom: 10px;
+}
+.feedback-text p {
+  color: #838282;
+  font-size: 14px;
+  margin-bottom: 0;
+  font-style: italic;
+}
+.feedback-img-cont {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+.client-info h6 {
+  color: #f39c12;
+  font-size: 16px;
+  font-weight: 600;
+}
+.client-info p {
+  font-size: 14px;
+  margin-bottom: 0;
+  font-style: italic;
+  color: #696868;
+}
+/* tweet start  */
+.tweet {
+  background-image: url("../images/tweet-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  padding: 70px 0;
+  position: relative;
+  z-index: 0;
+}
+.tweet::after {
+  content: "";
+  position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%); */
-  margin-right: 5px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.4s all ease-in-out;
+  z-index: -1;
+}
+.tweet p {
+  color: #fff;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+.color-chng {
   transition: 0.4s all ease-in-out;
 }
-.recent-story .owl-dots button span:hover {
-  background-color: #414141;
+.tweet:hover .color-chng {
+  color: #f39c12;
 }
-.recent-story .owl-dots button span:active {
-  background-color: #414141;
+/* get in touch start  */
+.get-in-touch {
+  padding: 70px 0;
 }
-/* .recent-story .owl-dots .owl-dot.active button span:focus {
-  background-color: #414141;
-} */
+.get-in-touch .title-part p {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+/* map start  */
+.map {
+  position: relative;
+}
+.map-text {
+  padding: 25px 20px;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  background-color: #f39c12;
+}
+.map-text span {
+  font-weight: 600;
+  font-size: 16px;
+}
+.map-text p {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+/* follow start  */
+.follow {
+  padding: 70px 0;
+}
+.follow ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 50px 0;
+}
+.follow ul li {
+  margin-right: 30px;
+}
+.follow ul li:last-child {
+  margin-right: 0px;
+}
+.follow ul li a {
+  text-decoration: none;
+}
+.follow ul li a i {
+  width: 40px;
+  height: 40px;
+  color: #f39c12;
+  border: 1px solid #ebebeb;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s all ease-in-out;
+}
+.follow ul li a i:hover {
+  color: #fff;
+  background-color: #f39c12;
+}
+
+/* footer start */
+footer {
+  background-color: #f39c12;
+  padding: 30px;
+}
+footer p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #505050;
+}
+footer p span {
+  color: #fff;
+}
