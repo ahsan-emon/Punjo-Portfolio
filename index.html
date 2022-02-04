@@ -673,24 +673,24 @@
             <div class="row justify-content-center">
               <div class="col-md-5">
                 <label for="name">Name:</label>
-                <input type="text" id="name">
+                <input type="text" id="name" required>
               </div>
               <div class="col-md-5">
                 <label for="sub">Subject:</label>
-                <input type="text" id="sub">
+                <input type="text" id="sub" required>
               </div>
               <div class="col-md-5">
-                <label for="mail">Email:</label>
-                <input type="email" id="mail">
+                <label class="pt-4"  for="mail">Email:</label>
+                <input type="email" id="mail" required>
               </div>
               <div class="col-md-5">
-                <label for="time">Time (From 9am to 5pm):</label>
-                <input type="time" id="time">
+                <label class="pt-4"  for="time">Time (From 9am to 5pm):</label>
+                <input type="text" onfocus="(this.type='time')" id="time" required>
               </div>
               <div class="col-md-10">
-                <label for="message">Your Message</label>
-                <textarea id="message" cols="30" rows="10"></textarea>
-                <button type="submit">Make Request</button>
+                <label class="pt-4" for="message">Your Message</label>
+                <textarea id="message" rows="5" required></textarea>
+                <button type="submit" class="btn">Make Request</button>
               </div>
             </div>
           </form>

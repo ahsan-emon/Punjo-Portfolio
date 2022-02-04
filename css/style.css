@@ -717,10 +717,35 @@ header .owl-nav .owl-next i {
 }
 .get-in-touch form label {
   display: block;
+  color: #616161;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
 }
 .get-in-touch form input,
 .get-in-touch form textarea {
   width: 100%;
+  border: 0;
+  padding: 5px 10px;
+  border-bottom: 1px solid #f39c12;
+  outline: 0;
+}
+.get-in-touch button {
+  background-color: #f39c12;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+  margin-top: 20px;
+  font-size: 17px;
+  padding: 5px 12px;
+  font-weight: 500;
+  border-top: 5px solid #f39c12;
+  border-bottom: 5px solid #d38509;
+  transition: 0.4s all ease-in-out;
+}
+.get-in-touch button:hover {
+  color: #fff;
+  border-bottom: 5px solid #f39c12;
 }
 /* map start  */
 .map {
