@@ -199,7 +199,8 @@ header .owl-nav .owl-next i {
 .life-story:hover .title-part span::after,
 .tweet:hover .title-part span::after,
 .get-in-touch:hover .title-part span::after,
-.follow:hover .title-part span::after {
+.follow:hover .title-part span::after,
+.feedback:hover .title-part span::after {
   animation: slide-arrow 2s linear infinite alternate;
 }
 @keyframes slide-arrow {
@@ -276,6 +277,7 @@ header .owl-nav .owl-next i {
 .statistic .title-part span,
 .work .title-part span,
 .recent-story .title-part span,
+.feedback .title-part span,
 .tweet .title-part span,
 .get-in-touch .title-part span,
 .follow .title-part span {
@@ -396,6 +398,13 @@ header .owl-nav .owl-next i {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: -1;
+}
+.statistic-info {
+  transition: 0.4s all ease-in-out;
+}
+.statistic-info:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 .statistic h2 {
   font-family: Arial, Helvetica, sans-serif;
@@ -684,6 +693,13 @@ header .owl-nav .owl-next i {
   margin-top: 30px;
   margin-bottom: 40px;
 }
+.get-in-touch form label {
+  display: block;
+}
+.get-in-touch form input,
+.get-in-touch form textarea {
+  width: 100%;
+}
 /* map start  */
 .map {
   position: relative;
@@ -694,7 +710,11 @@ header .owl-nav .owl-next i {
   top: 50%;
   right: 10%;
   transform: translateY(-50%);
-  background-color: #f39c12;
+  background-color: #f39d12bd;
+  transition: 0.4s all ease-in-out;
+}
+.map-text:hover {
+  background-color: #f39d12e0;
 }
 .map-text span {
   font-weight: 600;

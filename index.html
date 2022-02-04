@@ -263,19 +263,25 @@
           </div>
           <div class="row text-center line p-5">
             <div class="col">
-              <h2>4609</h2>
-              <i class="fas fa-laptop"></i>
-              <h5>Finished projects</h5>
+              <div class="statistic-info">
+                <h2>4609</h2>
+                <i class="fas fa-laptop"></i>
+                <h5>Finished projects</h5>
+              </div>
             </div>
             <div class="col">
-              <h2>3470</h2>
-              <i class="far fa-smile"></i>
-              <h5>Happy client</h5>
+              <div class="statistic-info">
+                <h2>3470</h2>
+                <i class="far fa-smile"></i>
+                <h5>Happy client</h5>
+              </div>
             </div>
             <div class="col">
-              <h2>2908</h2>
-              <i class="fas fa-award"></i>
-              <h5>Awards</h5>
+              <div class="statistic-info">
+                <h2>2908</h2>
+                <i class="fas fa-award"></i>
+                <h5>Awards</h5>
+              </div>
             </div>
           </div>
         </div>
@@ -657,12 +663,37 @@
               <h1>Get in touch</h1>
               <span></span>
               <div class="row">
-                <div class="col-md-7 m-auto text-start">
+                <div class="col-md-10 col-lg-7 m-auto text-start">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vita eget dolor. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum.</p>
                 </div>
               </div>
             </div>
           </div>
+          <form action="">
+            <div class="row justify-content-center">
+              <div class="col-md-5">
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+              </div>
+              <div class="col-md-5">
+                <label for="sub">Subject:</label>
+                <input type="text" id="sub">
+              </div>
+              <div class="col-md-5">
+                <label for="mail">Email:</label>
+                <input type="email" id="mail">
+              </div>
+              <div class="col-md-5">
+                <label for="time">Time (From 9am to 5pm):</label>
+                <input type="time" id="time">
+              </div>
+              <div class="col-md-10">
+                <label for="message">Your Message</label>
+                <textarea id="message" cols="30" rows="10"></textarea>
+                <button type="submit">Make Request</button>
+              </div>
+            </div>
+          </form>
         </div>
       </section>
       <!-- get in touch section end  -->
