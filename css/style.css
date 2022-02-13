@@ -93,6 +93,10 @@ header .navbar-light .navbar-nav .nav-link:hover::after {
   justify-content: center;
   align-items: center;
 }
+.header-carousel {
+  width: 85%;
+  margin: auto;
+}
 .height {
   min-height: 91vh;
 }
@@ -179,11 +183,8 @@ header .owl-nav .owl-next i {
 .about .container-fluid {
   padding-left: 0;
 }
-.about img {
-  height: 90%;
-}
 .about-right-col {
-  width: 90%;
+  width: 95%;
 }
 .about-me {
   padding-bottom: 100px;

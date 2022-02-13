@@ -74,8 +74,8 @@
             </div>
         </div>
         <div class="container">
-          <div class="row height align-items-center owl-carousel owl-carousel-header">
-            <div class="col-10 col-md-11 p-4 m-auto text-end">
+          <div class="height align-items-center owl-carousel owl-carousel-header">
+            <div class="header-carousel text-end">
               <h2>Awesome</h2>
               <h1>personal template FOREVER</h1>
               <div class="button">
@@ -83,7 +83,7 @@
                 <a class="portfolio" href="">My portfolio</a>
               </div>
             </div>
-            <div class="col-10 col-md-11 p-4 m-auto text-end">
+            <div class="header-carousel text-end">
               <h2>Awesome</h2>
               <h1>personal template FOREVER</h1>
               <div class="button">
@@ -91,7 +91,7 @@
                 <a class="portfolio" href="">My portfolio</a>
               </div>
             </div>
-            <div class="col-10 col-md-11 p-4 m-auto text-end">
+            <div class="header-carousel text-end">
               <h2>Awesome</h2>
               <h1>personal template FOREVER</h1>
               <div class="button">
@@ -108,11 +108,11 @@
       <!-- about section start  -->
       <section class="about">
         <div class="container-fluid">
-          <div class="row row-cols-1 row-cols-lg-2 gy-5">
-            <div class="col">
+          <div class="row gy-5 justify-content-between">
+            <div class="col-md-5">
               <img class="img-fluid" src="images/item.png" alt="">
             </div>
-            <div class="col ps-5 ps-lg-0">
+            <div class="col-md-7 col-lg-6">
               <div class="about-right-col">
                 <div class="about-me">
                 <div class="text-center title-part">
@@ -404,8 +404,8 @@
               <span></span>
             </div>
           </div>
-          <div class="row owl-carousel owl-theme owl-carousel-story">
-            <div class="col-12">
+          <div class="owl-carousel owl-theme owl-carousel-story">
+            <div class="">
               <div class="row gx-0 justify-content-center">
                 <div class="col-md-4 col-lg-3">
                   <div class="recent-story-text">
@@ -435,7 +435,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12">
+            <div class="">
               <div class="row gx-0 justify-content-center">
                 <div class="col-md-3">
                   <div class="recent-story-text">
@@ -465,7 +465,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12">
+            <div class="">
               <div class="row gx-0 justify-content-center">
                 <div class="col-md-3">
                   <div class="recent-story-text">
@@ -533,8 +533,8 @@
               <span></span>
             </div>
           </div>
-          <div class="row owl-carousel owl-theme owl-carousel-story">
-            <div class="col-12 col-lg-10 m-auto">
+          <div class="owl-carousel owl-theme owl-carousel-story">
+            <div class="">
               <div class="row row-cols-2">
                 <div class="col">
                   <div class="feedback-cont h-100">
@@ -568,7 +568,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-10 m-auto">
+            <div class="">
               <div class="row row-cols-2">
                 <div class="col">
                   <div class="feedback-cont h-100">
@@ -602,7 +602,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-10 m-auto">
+            <div class="">
               <div class="row row-cols-2">
                 <div class="col">
                   <div class="feedback-cont h-100">
@@ -754,36 +754,12 @@
     <!-- owl carousel  -->
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <!-- for header carousel  -->
-    <script>
-      $(document).ready(function(){
-        $(".owl-carousel-header").owlCarousel({
-          nav:true,
-          items:1,
-          dots: false,
-          loop:true,
-          autoplay:true,
-          navText: ["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"]
-        });
-      });
-    </script>
-    <!-- for story carousel  -->
-    <script>
-      $(document).ready(function(){
-        $(".owl-carousel-story").owlCarousel({
-          loop:true,
-          margin:10,
-          nav:false,
-          items:1,
-        });
-      });
-    </script>
+    
     <script src="js/mixitup.min.js"></script>
     <script>
       // var config = document.querySelector('.mixCont');
-      // config mixitup 
-      var mixer = mixitup('.mixCont');
       // var mixer = mixitup(config);
     </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
